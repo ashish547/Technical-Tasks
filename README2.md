@@ -20,10 +20,10 @@ This Bash script automates the security auditing and hardening process on Linux 
 ## Usage
 
 1. Clone this repository to your server:
-   ```
-   git clone https://github.com/yourusername/security-audit-script.git
-   cd security-audit-script
-   ```
+```
+git clone https://github.com/yourusername/security-audit-script.git
+cd security-audit-script
+```
 Configure your security checks by editing `config.sh`.
 
 Run the script:
