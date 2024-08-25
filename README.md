@@ -1,22 +1,22 @@
 # Technical-Tasks
 
-Set 1: Monitoring System Resources for a Proxy Server
+### Set 1: Monitoring System Resources for a Proxy Server
 
-Top 10 Most Used Applications: The top_applications function uses ps to display the top 10 processes sorted by memory usage and shows their CPU and memory usage.
+**Top 10 Most Used Applications:** The `top_applications` function uses `ps` to display the top 10 processes sorted by memory usage and shows their CPU and memory usage.
 
-Network Monitoring: The network_monitoring function uses netstat to count established connections, display dropped packets, and network traffic stats (received/transmitted data).
+**Network Monitoring:** The `network_monitoring` function uses `netstat` to count established connections, display dropped packets, and network traffic stats (received/transmitted data).
 
-Disk Usage: The disk_usage function checks for any partitions that are using more than 80% of the disk space using the df command.
+**Disk Usage:** The `disk_usage` function checks for any partitions using more than 80% of the disk space using the df command.
 
-System Load: The system_load function shows the system load average using the uptime command and a breakdown of CPU usage using mpstat.
+**System Load:** The `system_load` function shows the system load average using the `uptime` command and a breakdown of CPU usage using `mpstat`.
 
-Memory Usage: The memory_usage function uses free to display memory and swap usage.
+**Memory Usage**: The `memory_usage` function uses `free` to display memory and swap usage.
 
-Process Monitoring: The process_monitoring function displays the number of active processes and lists the top 5 processes by CPU usage.
+**Process Monitoring:** The `process_monitoring` function displays the number of active processes and lists the top 5 processes by CPU usage.
 
-Service Monitoring: The service_monitoring function checks whether essential services like sshd, nginx, and iptables are running.
+**Service Monitoring:** The `service_monitoring` function checks whether essential services like `sshd`, `nginx`, and `iptables` are running.
 
-Custom Dashboard: The dashboard continuously refreshes the data every few seconds (configurable by the INTERVAL variable) and displays all the metrics in one view.
+**Custom Dashboard:** The dashboard continuously refreshes the data every few seconds (configurable by the `INTERVAL variable`) and displays all the metrics in one view.
 
 # System Resource Monitoring Script
 
@@ -47,25 +47,11 @@ Run the script using the following command-line options:
 
 Example usage:
 
-```bash
 ./system_monitor.sh -cpu
 ./system_monitor.sh -network
 ./system_monitor.sh -dashboard
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-Installation
+### Installation
 
 1. Clone this repository to your server:
 ```
@@ -73,7 +59,6 @@ git clone https://github.com/yourusername/system-monitor.git
 cd system-monitor
 ```
 2. Make the script executable:
-
 ```
 chmod +x system_monitor.sh
 ```
